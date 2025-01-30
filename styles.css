@@ -1,0 +1,153 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+/* CENTERED CONTAINER */
+.container {
+    width: 70%;
+    max-width: 900px;  /* Prevents it from being too wide on larger screens */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* SECTION STYLES */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6e45e2;
+    margin: 8px auto;
+    border-radius: 10px;
+}
+
+/* EXPERIENCE & PROJECTS */
+.experience .job, .projects .project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.experience .job:hover, .projects .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience h3, .projects h3 {
+    font-size: 1.8rem;
+    color: #6e45e2;
+}
+
+.experience p, .projects p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* DOWNLOAD CV BUTTON */
+#downloadCV {
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#downloadCV:hover {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTACT FORM */
+.contact form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #6e45e2;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* PHOTO AREA */
+.photo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px; /* Centers the photo and adds spacing */
+    border: 5px solid white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle */
+}
